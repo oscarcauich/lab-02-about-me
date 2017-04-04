@@ -4,7 +4,7 @@ alert('Lets Play a game!');
 //ask user questions about me and define answer variables
 var progLang = prompt('Am I familiar with PHP programming Language?');
 var profBackg = prompt('Is my prefessional Background in Computer Networking?');
-var carfan = prompt('Do I like cars?');
+var carFan = prompt('Do I like cars?');
 var origCountry = prompt('Am I originally from Mexico?');
 var currCompany = prompt('Is my current employeer Gravity Payments?');
 
@@ -25,9 +25,9 @@ if(profBackg.trim().toLowerCase() == 'yes' || profBackg.trim().toLowerCase() == 
   alert("OOPs I don't know what you typed");
 }
 
-if(carfan.trim().toLowerCase() == 'yes' || carfan.trim().toLowerCase() == 'y'){
+if(carFan.trim().toLowerCase() == 'yes' || carFan.trim().toLowerCase() == 'y'){
   alert('yes, I love working on Cars');
-}else if(carfan.trim().toLowerCase() == 'no' || carfan.trim().toLowerCase() == 'n'){
+}else if(carFan.trim().toLowerCase() == 'no' || carFan.trim().toLowerCase() == 'n'){
   alert('How dare you!');
 }else {
   alert("OOPs I don't know what you typed");
@@ -48,3 +48,10 @@ if(currCompany.trim().toLowerCase() == 'yes' || currCompany.trim().toLowerCase()
 } else {
   alert("OOPs I don't know what you typed");
 }
+
+//Add user input into the browser's console
+console.log('Answer to first Question: ' + progLang);
+console.log('Answer to Second Question: ' + profBackg);
+console.log('Answer to third Question: ' + carFan);
+console.log('Answer to fourth Question: ' + origCountry);
+console.log('Answer to fifth Question: ' + currCompany);
