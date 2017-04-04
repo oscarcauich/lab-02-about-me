@@ -1,0 +1,21 @@
+h1 {
+  font-family: verdana;
+  font-size: 32px;
+  color: #EC4E2C;
+  text-align: center;
+  background-color: #A2EAF5;
+  border-style: solid;
+  border:1px;
+  border-color: #838687;
+  border-radius: 3px;
+}
+h2{
+  font-family: verdana;
+  font-size: 26px;
+  color: #C25C47;
+  text-align: center;
+}
+p {
+  font-family: inherit;
+  font-size: 16px;
+}
