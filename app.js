@@ -40,3 +40,11 @@ if(origCountry.trim().toLowerCase() == 'yes' || origCountry.trim().toLowerCase()
 }else {
   alert("OOPs I don't know what you typed");
 }
+
+if(currCompany.trim().toLowerCase() == 'yes' || currCompany.trim().toLowerCase() == 'y'){
+  alert("You're great, I work at Gravity Payments!");
+} else if (currCompany.trim().toLowerCase() == 'no' || currCompany.trim().toLowerCase() == 'n'){
+  alert('Nope, that is not the correct answer!');
+} else {
+  alert("OOPs I don't know what you typed");
+}
