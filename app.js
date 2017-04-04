@@ -18,9 +18,17 @@ if(progLang.trim().toLowerCase() == 'yes' || progLang.trim().toLowerCase() == 'y
 }
 
 if(profBackg.trim().toLowerCase() == 'yes' || profBackg.trim().toLowerCase() == 'y'){
-  alert("Yes, My background is in Computer Networking");
+  alert('Yes, My background is in Computer Networking');
 }else if(profBackg.trim().toLowerCase() == 'no' || profBackg.trim().toLowerCase() == 'n'){
   alert("Since you didn't know, I will tell you again, My background is in Computer Networking");
 } else {
+  alert("OOPs I don't know what you typed");
+}
+
+if(carfan.trim().toLowerCase() == 'yes' || carfan.trim().toLowerCase() == 'y'){
+  alert('yes, I love working on Cars');
+}else if(carfan.trim().toLowerCase() == 'no' || carfan.trim().toLowerCase() == 'n'){
+  alert("How dare you!");
+}else {
   alert("OOPs I don't know what you typed");
 }
