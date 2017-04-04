@@ -28,7 +28,15 @@ if(profBackg.trim().toLowerCase() == 'yes' || profBackg.trim().toLowerCase() == 
 if(carfan.trim().toLowerCase() == 'yes' || carfan.trim().toLowerCase() == 'y'){
   alert('yes, I love working on Cars');
 }else if(carfan.trim().toLowerCase() == 'no' || carfan.trim().toLowerCase() == 'n'){
-  alert("How dare you!");
+  alert('How dare you!');
+}else {
+  alert("OOPs I don't know what you typed");
+}
+
+if(origCountry.trim().toLowerCase() == 'yes' || origCountry.trim().toLowerCase() == 'y'){
+  alert("Sweet!, you are right, I'm originally from Mexico");
+}else if(origCountry.trim().toLowerCase() == 'no' || origCountry.trim().toLowerCase() == 'n'){
+  alert('Oh no!');
 }else {
   alert("OOPs I don't know what you typed");
 }
