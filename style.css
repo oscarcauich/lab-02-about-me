@@ -1,3 +1,10 @@
+body {
+  background-color: #E9F8FD;
+  width: 800px;
+  margin-left: auto;
+  padding-right: 300px;
+}
+
 h1 {
   font-family: verdana;
   font-size: 32px;
