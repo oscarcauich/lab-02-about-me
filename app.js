@@ -55,3 +55,29 @@ console.log('Answer to Second Question: ' + profBackg);
 console.log('Answer to third Question: ' + carFan);
 console.log('Answer to fourth Question: ' + origCountry);
 console.log('Answer to fifth Question: ' + currCompany);
+
+//Add Sixth Question for user
+//Declaring and defining variables
+var correctAge = 32;
+var quesAnswCorrect = false;
+var numberOfGuesses;
+var guessAge;
+guessAge = parseInt(guessAge);
+
+//looping Thur sixth Question
+for(numberOfGuesses = 0; numberOfGuesses < 4 && !quesAnswCorrect; numberOfGuesses++){
+  guessAge = prompt('Can you guess how old am I?');
+  guessAge = parseInt(guessAge);
+  if(guessAge === correctAge){
+    alert('You got it');
+    quesAnswCorrect = true;
+  }else if(guessAge > 32){
+    alert('OOPS! I\'m not that old');
+  }else if(guessAge < 32){
+    alert('Guess a little highger');
+  }
+
+  if(numberOfGuesses === 3){
+    alert('You run out of chances');
+  }
+}
