@@ -4,13 +4,11 @@ var correctNumberOfAnswer = 0;
 var nameOfUser = prompt('Lets start by Getting your name');
 
 //ask user questions about me and define answer variables
-var progLang = prompt('Am I familiar with PHP programming Language?');
-var profBackg = prompt('Is my prefessional Background in Computer Networking?');
-var carFan = prompt('Do I like cars?');
-var origCountry = prompt('Am I originally from Mexico?');
-var currCompany = prompt('Is my current employeer Gravity Payments?');
 
 //take users inputs and validate input and give feedback to user
+// Question 1 begins here
+var progLang = prompt('Am I familiar with PHP programming Language?');
+console.log('Answer to first Question: ' + progLang);
 if(progLang.trim().toLowerCase() == 'yes' || progLang.trim().toLowerCase() == 'y'){
   alert("I've been coding in PHP for a few years now");
   correctNumberOfAnswer++;
@@ -20,6 +18,8 @@ if(progLang.trim().toLowerCase() == 'yes' || progLang.trim().toLowerCase() == 'y
   alert("OOPs I don't know what you typed");
 }
 
+var profBackg = prompt('Is my prefessional Background in Computer Networking?');
+console.log('Answer to Second Question: ' + profBackg);
 if(profBackg.trim().toLowerCase() == 'yes' || profBackg.trim().toLowerCase() == 'y'){
   alert('Yes, My background is in Computer Networking');
   correctNumberOfAnswer++;
@@ -29,6 +29,8 @@ if(profBackg.trim().toLowerCase() == 'yes' || profBackg.trim().toLowerCase() == 
   alert("OOPs I don't know what you typed");
 }
 
+var carFan = prompt('Do I like cars?');
+console.log('Answer to third Question: ' + carFan);
 if(carFan.trim().toLowerCase() == 'yes' || carFan.trim().toLowerCase() == 'y'){
   alert('yes, I love working on Cars');
   correctNumberOfAnswer++;
@@ -38,6 +40,8 @@ if(carFan.trim().toLowerCase() == 'yes' || carFan.trim().toLowerCase() == 'y'){
   alert("OOPs I don't know what you typed");
 }
 
+var origCountry = prompt('Am I originally from Mexico?');
+console.log('Answer to fourth Question: ' + origCountry);
 if(origCountry.trim().toLowerCase() == 'yes' || origCountry.trim().toLowerCase() == 'y'){
   alert("Sweet!, you are right, I'm originally from Mexico");
   correctNumberOfAnswer++;
@@ -47,6 +51,8 @@ if(origCountry.trim().toLowerCase() == 'yes' || origCountry.trim().toLowerCase()
   alert("OOPs I don't know what you typed");
 }
 
+var currCompany = prompt('Is my current employeer Gravity Payments?');
+console.log('Answer to fifth Question: ' + currCompany);
 if(currCompany.trim().toLowerCase() == 'yes' || currCompany.trim().toLowerCase() == 'y'){
   alert("You're great, I work at Gravity Payments!");
   correctNumberOfAnswer++;
@@ -56,12 +62,7 @@ if(currCompany.trim().toLowerCase() == 'yes' || currCompany.trim().toLowerCase()
   alert("OOPs I don't know what you typed");
 }
 
-//Add user input into the browser's console
-console.log('Answer to first Question: ' + progLang);
-console.log('Answer to Second Question: ' + profBackg);
-console.log('Answer to third Question: ' + carFan);
-console.log('Answer to fourth Question: ' + origCountry);
-console.log('Answer to fifth Question: ' + currCompany);
+
 
 //Add Sixth Question for user
 //Declaring and defining variables
@@ -69,7 +70,7 @@ var correctAge = 32;
 var quesAnswCorrect = false;
 var numberOfGuesses;
 var guessAge;
-guessAge = parseInt(guessAge);
+//guessAge = parseInt(guessAge);
 
 //looping Thur sixth Question
 for(numberOfGuesses = 0; numberOfGuesses < 4 && !quesAnswCorrect; numberOfGuesses++){
@@ -101,25 +102,33 @@ for(numberOfGuesses = 0; numberOfGuesses < 4 && !quesAnswCorrect; numberOfGuesse
 
 //Add seventh Question
 //Declaring and defining variables
-var correctAnswersAboutMe = ['php','cars', 'computers', 'camping'];
+var correctAnswersAboutMe = ['php','cars', 'computers' , 'camping'];
 var seventhQuestion;
 var seventhQuestionAnswer;
 var answerComp = true;
+var answerComp2 = true;
 var i;
 
 for (seventhQuestion = 0; seventhQuestion < 6 && answerComp; seventhQuestion++){
     seventhQuestionAnswer  = prompt('What things do I like?');
 
-      for(i = 0; i < correctAnswersAboutMe.length; i++){
+      for(i = 0; i < correctAnswersAboutMe.length  ; i++){
          if(seventhQuestionAnswer.toLowerCase() == correctAnswersAboutMe[i]){
            alert('You got it! Here are all possible Answers ' + correctAnswersAboutMe);
            answerComp = false;
+           //answerComp2 = true;
            correctNumberOfAnswer++;
 
            //cosole.log the value of guessAge
            console.log('The value of the 7th Question is ', seventhQuestionAnswer);
+         } else if ( i === correctAnswersAboutMe - 1) {
+
+
+           alert('no');
+           console.log(answerComp)
          }
+
       }
 }
 
-alert('Thank you for playing my Game ' + nameOfUser + ' .You got' + correctNumberOfAnswer + ' out of 7 questions correct');
+alert('Thank you for playing my Game ' + nameOfUser + ' .You got ' + correctNumberOfAnswer + ' out of 7 questions correct');
