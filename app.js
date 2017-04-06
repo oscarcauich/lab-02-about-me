@@ -73,11 +73,30 @@ for(numberOfGuesses = 0; numberOfGuesses < 4 && !quesAnswCorrect; numberOfGuesse
     quesAnswCorrect = true;
   }else if(guessAge > 32){
     alert('OOPS! I\'m not that old');
-  }else if(guessAge < 32){
+  }else{
     alert('Guess a little highger');
   }
 
   if(numberOfGuesses === 3){
     alert('You run out of chances');
   }
+}
+
+//Add seventh Question
+//Declaring and defining variables
+var correctAnswersAboutMe = ['php','cars', 'computers', 'camping'];
+var seventhQuestion;
+var seventhQuestionAnswer;
+var answerComp = true;
+var i;
+
+for (seventhQuestion = 0; seventhQuestion < 6 && answerComp; seventhQuestion++){
+    seventhQuestionAnswer  = prompt('text');
+
+      for(i = 0; i < correctAnswersAboutMe.length; i++){
+         if(seventhQuestionAnswer.toLowerCase() == correctAnswersAboutMe[i]){
+           alert('You got it! Here are all possible Answers ' + correctAnswersAboutMe);
+           answerComp = false;
+         }
+      }
 }
