@@ -1,5 +1,7 @@
 'use strict';
 alert('Lets Play a game!');
+var correctNumberOfAnswer = 0;
+var nameOfUser = prompt('Lets start by Getting your name');
 
 //ask user questions about me and define answer variables
 var progLang = prompt('Am I familiar with PHP programming Language?');
@@ -11,6 +13,7 @@ var currCompany = prompt('Is my current employeer Gravity Payments?');
 //take users inputs and validate input and give feedback to user
 if(progLang.trim().toLowerCase() == 'yes' || progLang.trim().toLowerCase() == 'y'){
   alert("I've been coding in PHP for a few years now");
+  correctNumberOfAnswer++;
 } else if (progLang.trim().toLowerCase() == 'no' || progLang.trim().toLowerCase() == 'n') {
   alert("Looks like you did not know, I'm familiar with PHP");
 }else {
@@ -19,6 +22,7 @@ if(progLang.trim().toLowerCase() == 'yes' || progLang.trim().toLowerCase() == 'y
 
 if(profBackg.trim().toLowerCase() == 'yes' || profBackg.trim().toLowerCase() == 'y'){
   alert('Yes, My background is in Computer Networking');
+  correctNumberOfAnswer++;
 }else if(profBackg.trim().toLowerCase() == 'no' || profBackg.trim().toLowerCase() == 'n'){
   alert("Since you didn't know, I will tell you again, My background is in Computer Networking");
 } else {
@@ -27,6 +31,7 @@ if(profBackg.trim().toLowerCase() == 'yes' || profBackg.trim().toLowerCase() == 
 
 if(carFan.trim().toLowerCase() == 'yes' || carFan.trim().toLowerCase() == 'y'){
   alert('yes, I love working on Cars');
+  correctNumberOfAnswer++;
 }else if(carFan.trim().toLowerCase() == 'no' || carFan.trim().toLowerCase() == 'n'){
   alert('How dare you!');
 }else {
@@ -35,6 +40,7 @@ if(carFan.trim().toLowerCase() == 'yes' || carFan.trim().toLowerCase() == 'y'){
 
 if(origCountry.trim().toLowerCase() == 'yes' || origCountry.trim().toLowerCase() == 'y'){
   alert("Sweet!, you are right, I'm originally from Mexico");
+  correctNumberOfAnswer++;
 }else if(origCountry.trim().toLowerCase() == 'no' || origCountry.trim().toLowerCase() == 'n'){
   alert('Oh no!');
 }else {
@@ -43,6 +49,7 @@ if(origCountry.trim().toLowerCase() == 'yes' || origCountry.trim().toLowerCase()
 
 if(currCompany.trim().toLowerCase() == 'yes' || currCompany.trim().toLowerCase() == 'y'){
   alert("You're great, I work at Gravity Payments!");
+  correctNumberOfAnswer++;
 } else if (currCompany.trim().toLowerCase() == 'no' || currCompany.trim().toLowerCase() == 'n'){
   alert('Nope, that is not the correct answer!');
 } else {
@@ -71,6 +78,7 @@ for(numberOfGuesses = 0; numberOfGuesses < 4 && !quesAnswCorrect; numberOfGuesse
   if(guessAge === correctAge){
     alert('You got it');
     quesAnswCorrect = true;
+    correctNumberOfAnswer++;
   }else if(guessAge > 32){
     alert('OOPS! I\'m not that old');
   }else{
@@ -97,6 +105,9 @@ for (seventhQuestion = 0; seventhQuestion < 6 && answerComp; seventhQuestion++){
          if(seventhQuestionAnswer.toLowerCase() == correctAnswersAboutMe[i]){
            alert('You got it! Here are all possible Answers ' + correctAnswersAboutMe);
            answerComp = false;
+           correctNumberOfAnswer++;
          }
       }
 }
+
+alert('Thank you for playing my Game ' + nameOfUser + 'You got' + correctNumberOfAnswer + ' out of 7 questions correct');
