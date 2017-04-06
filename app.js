@@ -79,10 +79,19 @@ for(numberOfGuesses = 0; numberOfGuesses < 4 && !quesAnswCorrect; numberOfGuesse
     alert('You got it');
     quesAnswCorrect = true;
     correctNumberOfAnswer++;
+
+    //cosole.log the value of guessAge
+    console.log('The value of guessAge is ', guessAge);
   }else if(guessAge > 32){
     alert('OOPS! I\'m not that old');
+
+    //cosole.log the value of guessAge
+    console.log('The value of guessAge is ', guessAge);
   }else{
     alert('Guess a little higher');
+
+    //cosole.log the value of guessAge
+    console.log('The value of guessAge is ', guessAge);
   }
 
   if(numberOfGuesses === 3){
@@ -106,6 +115,9 @@ for (seventhQuestion = 0; seventhQuestion < 6 && answerComp; seventhQuestion++){
            alert('You got it! Here are all possible Answers ' + correctAnswersAboutMe);
            answerComp = false;
            correctNumberOfAnswer++;
+
+           //cosole.log the value of guessAge
+           console.log('The value of the 7th Question is ', seventhQuestionAnswer);
          }
       }
 }
