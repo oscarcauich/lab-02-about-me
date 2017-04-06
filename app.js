@@ -82,7 +82,7 @@ for(numberOfGuesses = 0; numberOfGuesses < 4 && !quesAnswCorrect; numberOfGuesse
   }else if(guessAge > 32){
     alert('OOPS! I\'m not that old');
   }else{
-    alert('Guess a little highger');
+    alert('Guess a little higher');
   }
 
   if(numberOfGuesses === 3){
@@ -99,7 +99,7 @@ var answerComp = true;
 var i;
 
 for (seventhQuestion = 0; seventhQuestion < 6 && answerComp; seventhQuestion++){
-    seventhQuestionAnswer  = prompt('text');
+    seventhQuestionAnswer  = prompt('What things do I like?');
 
       for(i = 0; i < correctAnswersAboutMe.length; i++){
          if(seventhQuestionAnswer.toLowerCase() == correctAnswersAboutMe[i]){
@@ -110,4 +110,4 @@ for (seventhQuestion = 0; seventhQuestion < 6 && answerComp; seventhQuestion++){
       }
 }
 
-alert('Thank you for playing my Game ' + nameOfUser + 'You got' + correctNumberOfAnswer + ' out of 7 questions correct');
+alert('Thank you for playing my Game ' + nameOfUser + ' .You got' + correctNumberOfAnswer + ' out of 7 questions correct');
