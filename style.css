@@ -1,8 +1,27 @@
 body {
   background-color: #E9F8FD;
-  width: 800px;
-  margin-left: auto;
-  padding-right: 300px;
+  margin: 0px;
+}
+
+header {
+  border: 15px solid #90E676;
+  width: 100%;
+  height: 150px;
+  position: fixed;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+header span{
+  font-size: 20px;
+
+}
+.container{
+  position: absolute;
+  right: 400px;
+  top: 50px;
+  border: 10px solid blue;
+  width: 600px;
+  background-color: #B0F69B;
 }
 
 h1 {
