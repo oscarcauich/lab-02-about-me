@@ -112,19 +112,18 @@ var i;
 for (seventhQuestion = 0; seventhQuestion < 6 && answerComp; seventhQuestion++){
     seventhQuestionAnswer  = prompt('What things do I like?');
 
-      for(i = 0; i < correctAnswersAboutMe.length  ; i++){
+      for(i = 0; i < correctAnswersAboutMe.length && answerComp2 ; i++){
          if(seventhQuestionAnswer.toLowerCase() == correctAnswersAboutMe[i]){
            alert('You got it! Here are all possible Answers ' + correctAnswersAboutMe);
            answerComp = false;
-           //answerComp2 = true;
+           answerComp2 = false;
            correctNumberOfAnswer++;
 
            //cosole.log the value of guessAge
            console.log('The value of the 7th Question is ', seventhQuestionAnswer);
-         } else if ( i === correctAnswersAboutMe - 1) {
+         } else if ( i === correctAnswersAboutMe.length - 1) {
 
-
-           alert('no');
+           alert('Please Try Again!');
            console.log(answerComp)
          }
 
