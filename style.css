@@ -16,10 +16,11 @@ header span{
 
 }
 footer {
-  border: 1px dashed blue;
   position: fixed;
   bottom: 0px;
   width: 100%;
+  height: 195;
+  background-image: url(images/footer.jpg);
 }
 .container{
   position: absolute;
