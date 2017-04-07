@@ -1,6 +1,6 @@
 body {
   background-color: #E9F8FD;
-  margin: 0px;
+  margin: 0;
 }
 
 header {
@@ -16,7 +16,7 @@ header span{
 
 }
 .container{
-  position: absolute;
+  margin:auto;
   right: 400px;
   top: 50px;
   border: 10px solid blue;
