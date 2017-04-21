@@ -1,3 +1,4 @@
+
 * {
   width: 100%;
   padding: 0;
@@ -40,7 +41,12 @@ body {
   display: inline-block;
   float: right;
 }
-#container{
+
+.container{
+  margin:auto;
+  right: 400px;
+  top: 50px;
+
   border: 10px solid blue;
   border-bottom: 0px;
   width: 100%;
